@@ -188,6 +188,8 @@ public class SubscribeProcessor implements HttpRequestProcessor {
             return;
         }
 
+
+
         synchronized (eventMeshHTTPServer.localClientInfoMapping) {
 
             registerClient(subscribeRequestHeader, consumerGroup, subTopicList, url);
